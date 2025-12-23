@@ -14,9 +14,11 @@
     programs.git = {
       enable = true;
       lfs.enable = true;
-      userEmail = "autumn@mck.is";
-      userName = "Autumn McKee";
-      extraConfig = {
+      settings = {
+        user = {
+          email = "autumn@mck.is";
+          name = "Autumn McKee";
+        };
         init.defaultBranch = "main";
         # http.sslVerify = false; # occasionally needed when cloning stuff from EEECS gitlab
       };

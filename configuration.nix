@@ -13,13 +13,11 @@
     ./declutterHome.nix
 
     ./programs/programs.nix
-    ./desktops/desktop.nix
     ./server/server.nix
   ];
 
-  networking.hostName = "cherry";
-  isDesktop = true;
-  isServer = false;
+  networking.hostName = "willow";
+  isServer = true;
 
   fish.enable = true;
   distrobox.enable = true;
@@ -29,12 +27,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.configurationLimit = 20;
-
-  # theme the tty
-  catppuccin.tty = {
-    enable = true;
-    flavor = "macchiato";
-  };
 
   programs.nix-ld.enable = true;
 
