@@ -12,6 +12,7 @@
       mode = "rgb";
       light_dark = "dark";
       lightness = 0.65;
+      pride_month_disable = false;
       color_align = {
         mode = "horizontal";
       };
